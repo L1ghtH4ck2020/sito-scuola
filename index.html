@@ -32,14 +32,14 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/main.css">
-
   <link rel="icon" type="image/x-icon" href="img/salesiani.png">
 
+  <link href="css/main.css" rel="stylesheet">
 
 </head>
 
 <body>
+  <div id="inizio"></div>
 
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center">
@@ -66,19 +66,19 @@
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center" style="height: 160px;">
 
-    <h1 style="margin-left: 400px; margin-right: 50px;"><a href="index.html"><img src="img/salesiani2.png" width="230px"
+    <h1 style="margin-left: 400px; margin-right: 50px;"><a href="#inizio"><img src="img/salesiani2.png" width="230px"
           height="100px" alt=""></a></h1>
 
     <div class="container d-flex align-items-center justify-content-between">
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#chi">Chi siamo</a></li>
-          <li><a class="nav-link scrollto" href="#news">News</a></li>
+          <li><a class="nav-link scrollto" href="#settori">Settori</a></li>
+          <li><a class="nav-link scrollto" href="#chi">Chi siamo</a></li>
           <li><a class="nav-link scrollto" href="#galleria">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#trasparenza">Trasparenza</a></li>
           <li><a class="nav-link scrollto" href="#contatti">Contatti</a></li>
           <li><a class="nav-link scrollto" href="#dove">Dove Siamo</a></li>
+          <li><a class="nav-link scrollto" href="#footer">Info</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -104,54 +104,78 @@
 
 
 
+  <!-- ======= Settori ======= -->
+
   <main id="main">
 
 
-    <!-- ======= Settori ======= -->
+
     <section id="featured-services" class="featured-services">
-      <div class="container" data-aos="fade-up">
+      <div class="container" id="settori" data-aos="fade-up">
 
         <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Energia</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: red;" data-aos="fade-up" data-aos-delay="100">
+              <img src="img/energia.png" style="width: 18rem;" alt="">
+              <p class="description" style="color:white; text-align: center; padding-top: 20px;">L’operatore energetico
+                interviene nell'installazione, collaudo
+                e manutenzione di impianti termici, idraulici, di condizionamento e fotovoltaici, con una particolare
+                attenzione al risparmio energetico, anche grazie alla building automation.</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Motoristico <br> Carrozzeria</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: gold;" data-aos="fade-up" data-aos-delay="200">
+              <img src="img/motoristico.png" style="width: 22rem;" alt="">
+              <p class="description" style="color:white; text-align: center; padding-top: 20px;">L’operatore alla
+                riparazione di veicoli a motore effettua riparazioni e manutenzione dei motori e dell'autoveicolo in
+                tutte le sue parti. Effettua diagnosi e prove sui gas di scarico intervenendo per risolvere le anomalie.
+              </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Informatico</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: cadetblue;" data-aos="fade-up"
+              data-aos-delay="300">
+              <img src="img/informatico.png" style="width: 22rem;" alt="">
+              <p class="description" style="color:white; text-align: center; padding-top: 20px;">L’operatore informatico
+                installa e configura hardware e software, esegue la manutenzione di sistemi, reti e terminali utente,
+                fornisce assistenza tecnica, effettua l'elaborazione e la manutenzione di dati su archivi digitali.
+
+                Con il quarto anno in Sistema Duale diventa tecnico sviluppatore di soluzioni software.</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Meccanico</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: violet;" data-aos="fade-up"
+              data-aos-delay="400">
+              <img src="img/meccanico.png" style="width: 22rem;" alt="">
+              <p class="description" style="color:white; text-align: center; padding-top: 20px;">L’operatore meccanico
+                realizza lavorazioni al tornio, fresatrice e macchine utensili in generale. Partendo dal progetto
+                realizzato con il CAD effettua la programmazione delle macchine a controllo numerico. Realizza saldature
+                ad arco, TIG, MAG, taglio al plasma.</p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Elettricistico</a></h4>
-              <p class="description"></p>
-
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: blue;" data-aos="fade-up" data-aos-delay="500">
+              <img src="img/elettrico.png" style="width: 22rem;" alt="">
+              <p class="description" style="color:white; text-align: center; padding-top: 20px;">L’operatore elettrico
+                installa ed effettua la manutenzione di impianti civili e industriali, sia con tecnologie tradizionali
+                che automatizzate. Realizza la programmazione dei componenti domotici e dei controllori programmabili
+                industriali.</p>
             </div>
+          </div>
 
+          <div class="col-md-6 col-lg-6 d-flex align-items-stretch mb-5 mb-lg-0" id="b-spazio">
+            <div class="icon-box" style="width: 650px; background-color: green;" data-aos="fade-up"
+              data-aos-delay="600">
+              <img src="img/carrozzeria.png" style="width: 22rem;" alt="">
+              <p class="description" style="color: white; text-align: center; padding-top: 20px;">Si occupa quindi della
+                riparazione di graffi e ammaccature alla carrozzeria (tramite martellatura, bombatura, stuccatura ecc.),
+                dell'eventuale sostituzione dei pezzi danneggiati, della raddrizzatura e del livellamento del telaio e
+                della scocca, e della riverniciatura finale.</p>
+            </div>
           </div>
 
         </div>
@@ -256,11 +280,11 @@
 
 
     <!-- ======= Contact Section ======= -->
-    <section id="contatti" class="contact">
+    <section id="contatti" class="contact" style="background-color: rgb(244, 242, 242);">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contatti e Indirizzo</h2>
+          <h2>Contatti</h2>
           <h3><span>Contattaci</span></h3>
         </div>
 
@@ -274,7 +298,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6">
-            <div class="info-box  mb-4">
+            <div class="info-box mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email</h3>
               <p>info@donboscosandona.it</p>
@@ -291,17 +315,8 @@
 
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100" id="dove">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853.7912162726827!2d12.572469170411376!3d45.629834665531845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477956fe076b4157%3A0x29fb231d47465883!2sCnos%20Fap%20Don%20Bosco!5e0!3m2!1sit!2sit!4v1675286392825!5m2!1sit!2sit"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 384px;"
-              allowfullscreen></iframe>
-          </div>
-
-          <div class="col-lg-6">
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div>
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col form-group">
@@ -315,7 +330,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Soggeto" required>
               </div>
               <div class="form-group">
-                <textarea class="form-control" name="message" rows="5" placeholder="Messaggio" required></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Messaggio" style="overflow:auto;resize:none" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -332,6 +347,37 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+
+
+
+
+  <!-- ======= Maps ======= -->
+
+
+  <div class="container-fluid" id="dove" style="padding-bottom: 80px; padding-top: 80px; background-color: dimgrey;">
+
+    <div class="section-title">
+      <h2>Indirizzo</h2>
+      <h3><span style="color:cornflowerblue">Maps</span></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4"></div>
+
+      <div class="col-lg-4 ">
+        <iframe class="mb-12 mb-lg-12"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d853.7912162726827!2d12.572469170411376!3d45.629834665531845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477956fe076b4157%3A0x29fb231d47465883!2sCnos%20Fap%20Don%20Bosco!5e0!3m2!1sit!2sit!4v1675286392825!5m2!1sit!2sit"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" frameborder="0" style="border:0; width: 100%; height: 384px;"
+          allowfullscreen></iframe>
+      </div>
+
+      <div class="col-4"></div>
+    </div>
+  </div>
+
+
+
 
   <!-- ======= Footer ======= -->
   <footer id="footer" style="background-color: rgb(212, 212, 212);">
@@ -418,11 +464,11 @@
       </div>
     </div>
 
-    <div class="container py-4">
-      <div class="copyright">
+    <div class="container py-4" style="height: 100px;">
+      <div class="copyright" style="padding-top: 40px;">
         &copy; Copyright <strong><span>Creative License</span></strong>. All Rights Reserved
       </div>
-      <div class="credits">
+      <div class="credits" style="padding-top: 40px;">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
